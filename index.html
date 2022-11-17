@@ -13,6 +13,10 @@
     </head>
 
     <body>
+        <br>
+        <br>
+        <script src="/script.js"></script>
+
         <header>
             <h1>My Favorite Gum</h1>
 
@@ -33,29 +37,10 @@
             </nav>
         </header>
 
+        <script>nameLenChecker(getUserName());</script>
+
         <br>
 
-        <script>
-            let userName = prompt("What is your username: ?");
-
-            if (!(userName == null))
-            {
-                document.write("__________Hi " + userName + "!!! Welcome!!!");
-            }
-            else
-            {
-                document.write("!!! Welcome!!!!!! Welcome!!!");
-            }
-        </script>
-
-        <script>
-            console.log(userName.length);
-            if (userName.length >= 8)
-            {
-                document.body.style.backgroundColor = "#DB6FA6";
-                
-            } 
-        </script>
 
         <main>
             <section id="wall">
@@ -92,21 +77,6 @@
 
         <br>
         <br>
-
-        <script>
-            if (userName.length > 5)
-            {
-                alert(userName + " YOUR NAME IS TOO LONG...get a shorter name!");
-                document.write(userName + " YOUR NAME IS TOO LONG...get a shorter name!");
-                userName = userName.substring(0, 5);
-                document.write("Don't worry about it I did it for you! XD...You are now " + userName);
-                alert("Don't worry about it I did it for you! XD...You are now " + userName);
-            }
-            else
-            {
-                document.write(userName + " Your name is the prefect length");
-            }
-        </script>
 
         <footer>
             <p>&copy; Marco Villafana 102d45</p>
