@@ -9,6 +9,8 @@ body {
     color: #111;
     padding: 0;
     margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
 }
 
 h1 {
@@ -16,7 +18,7 @@ h1 {
     margin: 0;
     text-align: center;
     color: #a4f7b9;
-    font: italic bold 30px Georgia, Serif;
+    font: italic bold 40px 'Varela Round', sans-serif;
     text-shadow: -4px 3px 0 #8F004A, -14px 7px 0 #0a0e27;
 }
 
@@ -44,4 +46,39 @@ ul {
     padding: 3px 6px;
     border-radius: 10px;
     background-color: #47FF45;
+    font-weight: bolder;
   }
+
+  .gum 
+  {
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+  }
+
+  .gum section
+  {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gum img
+  {
+    max-height: 276px;
+    border-radius: 10px;
+  }
+
+ #wall
+ {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    max-width: 75%;
+ }
+
+ #wall img
+ {
+    border-radius: 10px;
+ }
+

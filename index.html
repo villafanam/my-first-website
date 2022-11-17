@@ -4,6 +4,11 @@
 <head>
     <title>Favorite Gum</title>
     <link rel="stylesheet" href="/styles.css">
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,9 +32,21 @@
         </nav>
     </header>
 
+    <br>
+
     <script>
         let userName = prompt("What is your username: ?");
-        document.write("__________Hi " + userName + "!!! Welcome!!!");
+
+        if (!(userName == null))
+        {
+            document.write("__________Hi " + userName + "!!! Welcome!!!");
+        }
+        else
+        {
+            document.write("!!! Welcome!!!!!! Welcome!!!");
+        }
+        
+        
     </script>
 
     <script>
@@ -43,39 +60,36 @@
     </script>
 
     <main>
-        <section>
+        <section id="wall">
             <img src="images/Gum_Wall,_Downtown_Seattle_-_49004667098.jpg" alt="Gum Wall, Downtown Seattle, WA">
             <br>
             <caption>Gum Wall, Downtown Seattle, WA</caption>
-        </section>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor justo, ullamcorper vitae nibh sit amet,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor justo, ullamcorper vitae nibh sit amet,
             iaculis malesuada velit. In hac habitasse platea dictumst. Mauris ac dictum metus. Sed maximus, odio a
             aliquet vehicula, augue augue ultrices sapien, eget molestie nunc dolor a sem. Donec euismod, felis eget
             rutrum maximus, magna leo molestie nunc, nec ullamcorper lorem justo non quam. Morbi odio est, fermentum ac
-            metus eget, vestibulum scelerisque turpis.
-        </p>
-
-        <section>
-            <img src="images/651.jpg" alt="Hot Japanese Wasabi Flavour Gumballs">
-            <ul>
-                <li> Integer nisi odio, hendrerit et imperdiet vel, convallis sit amet sapien. Phasellus lorem felis,
-                    finibus eu augue suscipit, convallis dictum lorem</li>
-                <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras sapien
-                    felis, pulvinar a erat non, tempus malesuada purus.</li>
-            </ul>
+            metus eget, vestibulum scelerisque turpis. Ut dictum egestas dui ac tincidunt. Nunc ornare tellus nunc, vel fermentum neque finibus id. Etiam dignissim nisi vel velit venenatis, id facilisis tortor gravida. Cras malesuada sagittis tristique. Nullam interdum ornare ipsum, vitae fringilla lacus cursus sit amet. In et eros vel libero iaculis viverra sit amet ut ex. Integer consectetur blandit tellus. Vestibulum consectetur iaculis elit, id venenatis enim porta imperdiet. Pellentesque tempor leo in diam finibus, sagittis aliquam velit eleifend. Maecenas consectetur fringilla erat eu placerat. Proin at gravida sem. Cras pellentesque lacinia malesuada. Praesent et ex sed metus ultricies euismod. Ut lacinia, nulla at vehicula egestas, lacus nibh tincidunt ex, vel sodales nisi enim vel lacus.
+            </p>
+            <br><br><br>
         </section>
 
-        <section>
-            <img src="images/12298_top__46530_6.jpg"
-                alt="Meat of the Moment: Meatball Bubble Gum and More — Jessie Unicorn Moore">
-            <ul>
-                <li> Integer nisi odio, hendrerit et imperdiet vel, convallis sit amet sapien. Phasellus lorem felis,
-                    finibus eu augue suscipit, convallis dictum lorem</li>
-                <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras sapien
-                    felis, pulvinar a erat non, tempus malesuada purus.</li>
-            </ul>
-        </section>
+        <div class="gum">
+            <section >
+                <img src="images/wasabiGum.jpg" alt="Hot Japanese Wasabi Flavour Gumballs">
+                <p>
+                    Bacon ipsum dolor amet tri-tip tenderloin burgdoggen kielbasa ribeye filet mignon. Biltong tongue porchetta leberkas shankle capicola. Cow boudin pastrami short loin biltong picanha chicken cupim tongue alcatra bresaola prosciutto. Pork loin brisket pastrami tongue, doner burgdoggen turducken filet mignon pancetta pork chicken flank pig kielbasa t-bone. Ribeye andouille boudin, tail pork belly salami short loin leberkas strip steak. Hamburger tri-tip filet mignon chislic chicken. 
+                </p>
+            </section>
+
+            <section>
+                <img src="images/fullCourseGum.jpg" alt="full meal gum">
+                <p>
+                    Bacon ipsum dolor amet tri-tip tenderloin burgdoggen kielbasa ribeye filet mignon. Biltong tongue porchetta leberkas shankle capicola. Cow boudin pastrami short loin biltong picanha chicken cupim tongue alcatra bresaola prosciutto. Pork loin brisket pastrami tongue, doner burgdoggen turducken filet mignon pancetta pork chicken flank pig kielbasa t-bone. Ribeye andouille boudin, tail pork belly salami short loin leberkas strip steak. Hamburger tri-tip filet mignon chislic chicken. 
+                </p>
+            </section>
+        </div>
+        
     </main>
 
     <br>
@@ -87,8 +101,8 @@
             alert(userName + " YOUR NAME IS TOO LONG...get a shorter name!");
             document.write(userName + " YOUR NAME IS TOO LONG...get a shorter name!");
             userName = userName.substring(0, 5);
-            document.write("Don't worry I did it for you! XD...You are now " + userName);
-            alert("Don't worry I did it for you! XD...You are now " + userName);
+            document.write("Don't worry about it I did it for you! XD...You are now " + userName);
+            alert("Don't worry about it I did it for you! XD...You are now " + userName);
         }
         else
         {
