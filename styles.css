@@ -1,0 +1,47 @@
+header {
+    background-color: #DB6FA6;
+    height: 100px;
+    color: #8F0000;
+}
+
+body {
+    background: #7fec7d;
+    color: #111;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: #a4f7b9;
+    font: italic bold 30px Georgia, Serif;
+    text-shadow: -4px 3px 0 #8F004A, -14px 7px 0 #0a0e27;
+}
+
+nav {
+    padding: 13px;
+    background: #8F004A;
+    /* background-image: url(/images/113914-green-diagonal-stripes-background-vector.jpg); */
+  }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  a {
+    color: #111;
+    text-decoration: none;
+    border:5px inset #0C8F0A;
+    padding: 3px 6px;
+    border-radius: 10px;
+    background-color: #47FF45;
+  }

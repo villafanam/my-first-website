@@ -3,6 +3,7 @@
 
 <head>
     <title>Favorite Gum</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
@@ -25,6 +26,21 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        let userName = prompt("What is your username: ?");
+        document.write("__________Hi " + userName + "!!! Welcome!!!");
+    </script>
+
+    <script>
+        console.log(userName.length);
+        if (userName.length >= 8)
+        {
+            document.body.style.backgroundColor = "#DB6FA6";
+            
+        }
+        
+    </script>
 
     <main>
         <section>
@@ -61,6 +77,27 @@
             </ul>
         </section>
     </main>
+
+    <br>
+    <br>
+
+    <script>
+        if (userName.length > 5)
+        {
+            alert(userName + " YOUR NAME IS TOO LONG...get a shorter name!");
+            document.write(userName + " YOUR NAME IS TOO LONG...get a shorter name!");
+            userName = userName.substring(0, 5);
+            document.write("Don't worry I did it for you! XD...You are now " + userName);
+            alert("Don't worry I did it for you! XD...You are now " + userName);
+        }
+        else
+        {
+            document.write(userName + " Your name is the prefect length");
+        }
+        
+    </script>
+
+ 
 
     <footer>
         <p>&copy; Marco Villafana 102d45</p>
