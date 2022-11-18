@@ -1,20 +1,25 @@
 
 function getUserName()
 {
-    let userName = prompt("What is your username?");
+    let userName = prompt("What is your username????");
 
-    if (userName == "")
+    while(userName == "")
     {
-        alert("Please enter a name!")
-        userName = prompt("What is your username: ?");
+        userName = prompt("Please enter a USERNAME!");
     }
 
-    if(userName == "")
-    {
-        userName = "Gummy";
-        //alert(userName)
-        //document.write("!!!!!!!!!!!Welcome Gummy!!!!!!!!!!!");
-    }
+    // if (userName == "")
+    // {
+    //     alert("Please enter a username!")
+    //     userName = prompt("What is your username: ?");
+    // }
+
+    // if(userName == "")
+    // {
+    //     userName = "Gummy";
+    //     //alert(userName)
+    //     //document.write("!!!!!!!!!!!Welcome Gummy!!!!!!!!!!!");
+    // }
     // else
     // {
     //     document.write("!!!!!!!!!!!Welcome "+ userName + " !!!!!!!!!!!");
@@ -45,6 +50,24 @@ function nameLenChecker(name1)
     //     document.write(name1 + " Your name is the prefect length");
     // }  
     document.write("!!!!!!!!!!!Welcome " + name1 + " !!!!!!!!!!!");
-}
+}// function nameLenChecker
+
+function reviewPage()
+{
+    let gumball = 0;
+    gumball = prompt("How many gumballs(1-5) would you give this webstie? ");
+    
+    while(!(gumball >= 0 && gumball <= 5))
+    {
+        gumball = prompt("Rating must out 5 gumballs!");
+    }
+
+    for(let i = 0; i < gumball; i++)
+    {
+        document.write("<img class='gumball' src='images/gumballs/gumball"+ i + ".png' alt='puple gumball' />");
+    }
+
+    
+}// function reviewPage
 
     
